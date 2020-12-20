@@ -71,7 +71,7 @@ module.exports = function BoxOpener(mod) {
 				boxId = event.id
 				sendMessage(
 					"\n\t - Selected target: "  + boxId + " - " + mod.game.inventory.find(boxId).data.name +
-					"\n\t - Box opening interval: " + (mod.settings.useDelay ? (mod.settings.delay / 1000) + " 秒/次" : "无延迟")
+					"\n\t - Box opening interval: " + (mod.settings.useDelay ? (mod.settings.delay / 1000) + " Second/time" : "No delay")
 				)
 				
 				let d = new Date()
@@ -171,7 +171,7 @@ module.exports = function BoxOpener(mod) {
 			let s = addZero(d.getSeconds())
 			sendMessage("Number of completions: " + statOpened +
 				"\n\t - Total time: " + h + ":" + m + ":" + s +
-				"\n\t - Average time: " + ((timeElapsedMSec / statOpened) / 1000).toPrecision(2) + " 秒/次"
+				"\n\t - Average time: " + ((timeElapsedMSec / statOpened) / 1000).toPrecision(2) + " Second/time"
 			)
 			statOpened = 0
 			statUsed = 0
