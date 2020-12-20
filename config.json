@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "data": {
+        "enabled": false,
+        "useDelay": false,
+        "delay": 8000,
+        "trash": true,
+        "trashList": [
+            80078,
+            80079,
+            80080,
+            80082,
+            80089,
+            80090
+        ]
+    }
+}

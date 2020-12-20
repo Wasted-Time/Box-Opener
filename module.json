@@ -1,0 +1,15 @@
+{
+    "name": "Box-Opener",
+    "options": {
+        "niceName": "<font color='#FDD017'>Box Opener</font>",
+        "guiName": "<font color='#FDD017'>Box Opener Mod</font>",
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js",
+        "settingsVersion": 2
+    },
+    "author": "<font color='#00FFFF'>ZC / Owyn / TeraWaste</font>",
+    "description": "Automatic box opening",
+    "servers": ["https://github.com/Wasted-Time"],
+    "supportUrl": "https://github.com/Wasted-Time",
+    "version": "99.02/ 101.2"
+}

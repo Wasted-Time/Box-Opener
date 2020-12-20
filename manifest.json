@@ -1,0 +1,18 @@
+{
+    "files": {
+        "README.md": "83e6a665701a1cd4768ab197cfb3ba5bde32b55cec8462317587632ffce45e88",
+        "index.js": "b76d1edde9cfc5880f8a107e881fbd25b379c9f0eac5b267ebd997edad029549",
+        "module.json": "44e8e7d971f22b4c801571016aaa8d513a8d63eaa9f93b8c263f725b85b6886b",
+        "settings_migrator.js": "e0de04985c561ecd316bad07d2ffae08b4c89f7009b68b0a471dd663eb90be9f"
+    },
+    "defs": {
+        "C_DEL_ITEM": 3,
+        "C_GACHA_TRY": [1,2],
+        "C_PLAYER_LOCATION": 5,
+        "C_USE_ITEM": 3,
+        "S_GACHA_END": [1,3],
+        "S_GACHA_START": 2,
+        "S_SYSTEM_MESSAGE": 1,
+        "S_SYSTEM_MESSAGE_LOOT_ITEM": 1
+    }
+}
