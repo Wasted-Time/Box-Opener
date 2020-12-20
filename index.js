@@ -37,7 +37,6 @@ module.exports = function BoxOpener(mod) {
 		} else {
 			switch (arg) {
 				case "delay":
-				case "延迟":
 					number = parseInt(number)
 					if (isNaN(number) || number < 1) {
 						mod.settings.useDelay = false
@@ -49,9 +48,8 @@ module.exports = function BoxOpener(mod) {
 					}
 					break
 				case "trash":
-				case "垃圾":
 					mod.settings.trash = !mod.settings.trash
-					sendMessage("垃圾丢弃 " + (mod.settings.trash ? "On" : "Off"))
+					sendMessage("Garbage disposal " + (mod.settings.trash ? "On" : "Off"))
 					break
 				default:
 					sendMessage("Invalid parameter!")
@@ -72,8 +70,8 @@ module.exports = function BoxOpener(mod) {
 				boxEvent = event
 				boxId = event.id
 				sendMessage(
-					"\n\t - 选中目标: "  + boxId + " - " + mod.game.inventory.find(boxId).data.name +
-					"\n\t - 开盒间隔: " + (mod.settings.useDelay ? (mod.settings.delay / 1000) + " 秒/次" : "无延迟")
+					"\n\t - Selected target: "  + boxId + " - " + mod.game.inventory.find(boxId).data.name +
+					"\n\t - Box opening interval: " + (mod.settings.useDelay ? (mod.settings.delay / 1000) + " 秒/次" : "无延迟")
 				)
 				
 				let d = new Date()
@@ -171,9 +169,9 @@ module.exports = function BoxOpener(mod) {
 			let h = addZero(d.getHours())
 			let m = addZero(d.getMinutes())
 			let s = addZero(d.getSeconds())
-			sendMessage("完成次数: " + statOpened +
-				"\n\t - 共计用时: " + h + ":" + m + ":" + s +
-				"\n\t - 平均用时: " + ((timeElapsedMSec / statOpened) / 1000).toPrecision(2) + " 秒/次"
+			sendMessage("Number of completions: " + statOpened +
+				"\n\t - Total time: " + h + ":" + m + ":" + s +
+				"\n\t - Average time: " + ((timeElapsedMSec / statOpened) / 1000).toPrecision(2) + " 秒/次"
 			)
 			statOpened = 0
 			statUsed = 0
